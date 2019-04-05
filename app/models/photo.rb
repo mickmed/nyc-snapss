@@ -7,7 +7,7 @@ class Photo < ApplicationRecord
     #has_many :categories_photos
     #has_many :impressions, foreign_key: "impressionable_id"
     has_and_belongs_to_many :categories
-    #mount_uploader :picture, PhotographUploader
+    mount_uploader :picture, PhotographUploader
     #validate  :picture_size
    
     has_one_attached :image
